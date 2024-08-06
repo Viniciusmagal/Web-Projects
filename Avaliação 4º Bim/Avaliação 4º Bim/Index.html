@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="JS/function.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
+    integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg="
+    crossorigin=""></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
+    integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
+    crossorigin=""/>
+
+    <link rel="stylesheet" href="CSS/style.css">
+    <style>
+      #map{height: 750px;}
+  </style>
+
+  <title>Sexo a vontade</title>
+  
+
+</head>
+<body>
+<!-- Carousel -->
+<center>
+  <div id="demo" class="carousel slide" data-bs-ride="carousel" style="width: 50%;">
+  
+      <!-- Indicators/dots -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+      </div>
+  
+      <!-- The slideshow/carousel -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="Imagens/atibaia morango.jpg" alt="morango" class="d-block w-100" height="600px" width="1100px">
+        </div>
+        <div class="carousel-item">
+          <img src="Imagens/CC.jpg" alt="CC" class="d-block w-100" height="600px" width="1100px">
+        </div>
+        <div class="carousel-item">
+          <img src="Imagens/entrada de atibaia.jpg" alt="entrada atibaia" class="d-block w-100" height="600px" width="1100px">
+        </div>
+      </div>
+  
+      <!-- Left and right controls/icons -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </center>
+  <b><h1>História</h1></b>
+  <br>
+  <br>
+  <h3>Por Atibaia passaram os antigos bandeirantes no século XVII, que desbravaram as terras em busca de índios e minerais preciosos. A cidade fica numa região de serras.
+    Assim, os bandeirantes do século XVII têm ligação direta na fundação do município de Atibaia, pois atuavam como desbravadores explorando novas terras em busca de minerais preciosos e índios.
+    A maioria das expedições partia de São Paulo e a rota mais procurada era a que levava aos tesouros de Minas Gerais. Na época, as viagens eram longas, árduas e cansativas e era preciso fazer inúmeras paradas para descanso e abastecimento. A primeira delas, ainda na região de São Paulo, era feita onde atualmente situa-se Atibaia, pois os bandeirantes tinham grande interesse na colina banhada por um rio.
+    Profundo conhecedor da região, o bandeirante Jerônimo de Camargo fundou uma fazenda de gado e, no alto da colina, construiu uma capela sob proteção de São João Batista, no dia 24 de junho de 1665 - atualmente a data é feriado municipal em comemoração ao aniversário da cidade.
+    Neste mesmo período, o padre Mateus Nunes de Siqueira chegou do sertão com um grupo de índios guarus catequizados e, por ordem da Câmara Municipal de São Paulo, instalou-os ao lado do sítio de São João Batista. O pequeno núcleo confirmou-se, então, como parada obrigatória para quem seguia em direção a Minas Gerais e o povoado começou a desenvolver-se lentamente.
+    Mas foi a partir de 1864 que o povoado recebeu o título de município e, em 1905, o município de São João de Atibaia passou a denominar-se apenas Atibaia. A partir da Proclamação da República, Atibaia iniciou uma fase de grande desenvolvimento com uma série de melhoramentos locais: a instalação de redes de água, esgoto e luz elétrica, as inaugurações do Grupo Escolar José Alvim e do Hotel Municipal, a criação da primeira indústria têxtil, o alargamento das ruas, o ajardinamento das praças. Todos esses fatores alteraram significativamente o perfil da vila pobrezinha de São João do Atibaia e deram origem à Atibaia que conhecemos hoje.</h3>
+    <br>
+    <br><br>
+    <br>
+    <b><h5>População no último censo   144.088 (2020) pessoas</h5></b>
+    <br><br>
+    <b><h4>Trabalho e Rendimento</h4></b>
+    <br>
+    <h4>Em 2020, o salário médio mensal era de 2.2 salários mínimos. A proporção de pessoas ocupadas em relação à população total era de 27.7%. Na comparação com os outros municipios do estado, ocupava as posições 7 de 78 e 7 de 78, respectivamente. Já na comparação com cidades do país todo, ficava na posição 1177 de 5570 e 660 de 5570, respectivamente. Considerando domicilios com rendimentos mensais de até meio salário mínimo por pessoa, tinha 31.8% da população nessas condições, o que o colocava na posição 71 de 78 dentre as cidades do estado e na posição 4330 de 5570 dentre as cidades do Brasil.</h4>
+<br>
+<br>
+    <table class="table">
+      <tbody>
+        <tr>
+          <td>Taxa de escolarização de 6 a 14 anos de idade</td>
+          <td>97,7%</td>
+        </tr>
+        <tr>
+          <td>IDEB - Anos Iniciais do ensino fundamental(rede pública) </td>
+          <td>5,6</td>
+          
+          
+        </tr>
+
+        <tr>
+          <td>IDEB - Anos Finais do ensino fundamental(rede pública) [2021]</td>
+          <td>4,5</td>
+          
+          
+        </tr>
+
+
+      </tbody>
+    </table>
+    <b><h1>Economia</h1></b>
+    <br>
+    <h4> O PIB da cidade é de cerca de R$ 6,9 bilhões de, sendo que 60,5% do valor adicionado advém dos serviços, na sequência aparecem as participações da indústria (25,9%), da administração pública (10,3%) e da agropecuária (3,2%).</h4>
+    <br>
+    <br>
+    <b><h1>Saúde</h1></b>
+    <br>
+  
+    <h4>Em Atibaia, no ano de 2018, o coeficiente de mortalidade infantil foi de 4,7 óbitos de menores de um ano para cada mil nascidos vivos (estatística que também leva em conta hospitais particulares da cidade).</h4>
+    <br>
+
+    <b><h1>território e ambiente</h1></b>
+    <h4>O município se estende por 478,5 km² e contava com 142 761 habitantes no último censo. A densidade demográfica é de 298,4 habitantes por km² no território do município.
+      Vizinho dos municípios de Jarinu, Bom Jesus dos Perdões e Bragança Paulista,Atibaia se situa a 18 km a Sul-Oeste de Bragança Paulista.
+      Situado a 803 metros de altitude, de Atibaia tem as seguintes coordenadas geográficas: Latitude: 23° 7' 2'' Sul, Longitude: 46° 33' 1'' Oeste.
+      Atibaia é o lar do Parque Estadual de Itapetinga.</h4>
+      <br>
+      <br>
+      <b><h1>Contato</h1></b>
+
+
+
+
+
+<form action="" method="get">
+  <label for="GET-name">sua mensagem:</label>
+
+  <input id="nome" type="text" name="nome">
+
+  <label for="GET-name">Nome:</label>
+
+        <input id="GET-name" type="text" name="nome">
+  
+
+  
+<input type="button" onclick="capturado()" value="Save" id = "valorzada" >
+
+
+
+</form>
+
+<div id="map"></div>
+
+<script>
+
+var map = L.map('map').setView([-23.1168, -46.5563], 13);
+        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+}).addTo(map);
+
+var marker = L.marker([ -23.1171, -46.5502]).addTo(map);
+
+
+var circle = L.circle([-23.1168, -46.5563], {
+    color: 'red',
+    fillColor: '#f03',
+    fillOpacity: 0.5,
+    radius: 1500
+}).addTo(map);
+
+
+function getLocation(){
+    if(navigator.geolocation){
+        navigator.geolocation.getCurrentPosition(showPosition);
+    }else{
+       x.innerHTML = "Geolocation is not supported by this browser."
+    }
+}
+
+function showPosition(position){
+    x.innerHTML = "Latitude: " + position.coords.latitude +
+    "<br>Longitude" + position.coords.longitude;
+}
+</script>
+
+    
+</body>
+</html>
