@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="JS/jquery-3.6.1.min.js"></script>
+    <style>
+        .normal{
+            color:black
+        }
+        .colorido{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="mudarcor"></button>
+    <img src="img/slash.jpg" id="foto">
+    <p style="text-align: center;" class = "texto">arrudinha</p>
+    <span onclick="mudarcor()"></span>
+    <script>
+        $("#foto")
+        .mouseover(function(){
+            $("#foto").attr("src", "img/axl.jpg");
+        
+        })
+
+        $("#foto").mouseout(function(){
+            $('#foto').attr("src", "img/slash.jpg");
+            
+        })
+
+        function mudarcor(){
+            $("texto").toggleClass("colorido")
+        }
+
+    </script>
+</body>
+</html>
